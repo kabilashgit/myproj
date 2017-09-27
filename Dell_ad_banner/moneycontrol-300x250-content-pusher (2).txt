@@ -1,0 +1,44 @@
+300x250 Content Pusher
+----------------------------------------------------------------------------------------- 
+
+Specs: 
+	 Format: HTML5/3rd Party Tags
+	 File Size: Up to 100 kb
+	 Dimension: 300 x 250
+
+Scripts:
+	 Dimension :
+
+Base Unit : 300x250
+Expanded Unit : 990x500
+
+
+HTML5 Creative Format : 
+
+1. Creative should be a combination of HTML5 code and supporting Images, JavaScript and CSS3
+2. Supporting files should be added under one common folder and its relative path should be embedded within HTML code
+3. Supporting files will be hosted at our end
+4. Expand and Close button function will be control through Javascript/Jquery function
+5. Both dimension functions should be control under single HTML code
+
+
+3rd Party Creative Format :
+1. Ad tags should be from recognized ad server
+2. Iframe type of tags are not excepted
+
+Working :
+
+1.            Banner will auto expand and settle down to base unit in every 3/User/30 minutes time span 
+2.	Animation time of expanded frame should be upto 10 seconds
+3.	Close and Expand button should be added on all the frames of respective dimensions
+4.	User can click on expand as per the interest 
+5.	While expanding, banner will push the content towards down and auto settle within the above animation time
+6.	Placement : Close button should be on RHS top corner and Expand button can be on anywhere within settle frame
+
+Notes: 
+	 1. 990x500 : Animation Time upto 10 seconds
+2. Creative will auto expand to 990x500 and collapse to 300x250
+3. Close button should be at the top right corner of the 990x500 with bigger font size and border around it.
+4. IFRAME tags are not acceptable.
+
+

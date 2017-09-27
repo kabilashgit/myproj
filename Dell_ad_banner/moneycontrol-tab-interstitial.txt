@@ -1,0 +1,21 @@
+TAB Interstitial
+----------------------------------------------------------------------------------------- 
+
+Specs: 
+	 Format: JPEG/GIF
+	 File Size: Up to 100 kb
+	 Dimension: 1024 x 768
+
+Scripts:
+	 JPEG/GIF Creative Format :
+1. Creative should have border
+2. If there is any animation, it should be continuous loop 
+
+Required two separate files for landscape and portrait -
+
+Landscape version APP : 1024 x 768
+Potrait version APP : 768 x 1024
+
+Notes: 
+	 
+

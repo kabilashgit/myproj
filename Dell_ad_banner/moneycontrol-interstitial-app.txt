@@ -1,0 +1,16 @@
+Interstitial [APP]
+----------------------------------------------------------------------------------------- 
+
+Specs: 
+	 Format: JPEG/GIF
+	 File Size: Up to 100 kb
+	 Dimension: 320 x 480
+
+Scripts:
+	 JPEG/GIF Creative Format :
+1. Creative should have border
+2. If there is any animation, it should be continuous loop 
+
+Notes: 
+	 
+
