@@ -1,0 +1,82 @@
+@import url("../fonts/font_styles.css");
+body {
+	font-family: sans-serif;
+	color: #252525;
+}
+.row {
+	margin-bottom: 0;
+}
+[class*="col-"] {
+	background: none;
+	border: none;
+}
+.heading {
+	background: #dad8d3;
+	color: #00b1b1;
+	padding: 20px;
+	margin: 0px 0px 55px 0px;
+}
+.thumbnail {
+	border: none;
+	background: none;
+}
+.thumbnail .caption  .caption_title {
+	font-size: 18px;
+}
+.caption_title {
+	font-family: 'Aller Bold', Sans-serif;
+	text-transform: uppercase;
+}
+.bg-grey {
+	background: #dad8d3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.box-1 {
+	padding: 15px 0;
+	background: #00b1b1;
+	margin-top: 15px;
+}
+.box-2 {
+	padding: 15px 0;
+	background: #00b1b1;
+	margin-top: 15px;
+}
+.box-3 {
+	padding: 15px 0;
+	background: #00b1b1;
+	margin-top: 15px;
+}
+.title-box {
+	display: inline-block;
+	background: #6ec6c6;
+	padding: 8px 20px 8px 0px;
+	min-width: 250px;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #fff;
+}
+.panel {
+	width: 80%;
+	margin: 0 auto;
+	background: #66d0d0;
+	border: 0;
+}
+.panel-default > .panel-heading {
+	background: #dad8d3;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #00b1b1;
+}
+.panel-body {
+    padding: 15px;
+    min-height: 110px;
+	color: #fff;
+	font-size: 16px;
+}
+.img-circle {
+     border: 1px solid #00b1b1;
+}

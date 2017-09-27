@@ -1,0 +1,20 @@
+Skinner Branding
+----------------------------------------------------------------------------------------- 
+
+Specs: 
+	 Format: JPEG Only
+	 File Size: Upto 100 kb
+	 Dimension: 453 x 1080
+
+Scripts:
+	 Left and Right side branding : Image File Dimension  - 453x1080 (where content will be convered with 145x625px)
+
+1. Two seperate files required each with 453x1080 dimension
+2. Close button should be shared seperately with dimension 53x22 (recommended)
+
+Notes: 
+	 1. GIF/3rd Party Tags are not allowed for this creative format
+2. Left side content and close botton will be placed on RHS and Right side content and close button will be placed on LHS
+3. Place THE content below the close provision (To avoid content overlapping)
+4. Skinner branding is subject to screen resolution
+
