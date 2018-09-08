@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Aug, 2018, 1:05:12 PM
+    Author     : Manikandan K
+*/
+@mixin keyframes ($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+
+}
+@mixin breakpoints-min($min){
+    @media (min-width: $min) {
+        @content;
+    }
+}
+@mixin breakpoints-max($max){
+    @media (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin breakpoints-min-max($min, $max){
+    @media(min-width: #{$min}) and (max-width: #{$max}) {
+        @content;
+    }
+}
+
+@mixin crossBrowser($property, $val){
+    #{$property}: #{$val};
+    -webkit-#{$property}: #{$val};
+    -moz-#{$property}: #{$val};
+    -ms-#{$property}: #{$val};
+    -o-#{$property}: #{$val};
+}

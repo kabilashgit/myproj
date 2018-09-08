@@ -1,0 +1,268 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 8, 2018, 6:44:57 AM
+    Author     : Abilash
+*/
+
+@import "reset.scss";
+@import "_mixins.scss";;
+@import "variables.scss";
+body {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 16px;
+    color: $black-color;
+}
+
+.top-login {
+    text-align: right;
+    border-bottom: 1px solid $border-bottom;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    a {
+        color: $black-color;
+        text-decoration: none;
+    }
+}
+
+/*top menu styles*/
+.top-menu-wrapper {
+    .navbar-light {
+        padding-left: 25px;
+        padding-right:25px;
+        .navbar-nav  {
+            .nav-item {
+                padding-left: 10px;
+                padding-right:10px;          
+            }
+            .nav-link {
+                color: $black-color;
+            }
+        }
+    }
+    border-bottom: 2px solid $border-bottom;
+}
+
+/*sub header styles*/
+.bg-grey {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: $bg-grey;
+    border-bottom: 2px solid $blue-color;
+}
+.sub-header {
+    .nav-pills {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $border-bottom;        
+        .nav-link {
+            color: $black-color;
+            font-size: 13px;
+            font-weight: bold;
+            @include breakpoints-max (#{map-get($grid-breakpoints, sm)}) {
+                border: 1px solid $border-bottom;
+                background: $border-bottom;
+                margin-bottom: 15px;
+                margin-right: 5px;
+
+            }
+        }
+    }
+}
+
+.content-wrap {
+    padding-top: 3rem;
+    .about-box {
+        .heading {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 1.5rem;
+        }
+        .desc {
+            font-size: 14px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 1.4;
+            padding-bottom: 1.5rem;
+        }
+    }
+    .step-box {
+        border-bottom: 2px solid $border-bottom;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .heading {
+            font-size: 21px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 2;
+        }
+        .blue_heading {
+            color: $blue-color;
+            line-height: 1.8;
+            padding-bottom: 1rem;
+        }
+        .desc {
+            font-size: 14px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 1.4;
+            padding-bottom: 1.5rem;
+        }
+        .box {  
+            @include breakpoints-min-max (#{map-get($grid-breakpoints, lg)}, #{map-get($grid-breakpoints, xxl)}) {
+                border-right: 2px solid $border-bottom;
+            }
+            @include breakpoints-max (#{map-get($grid-breakpoints, lg)}) {
+                border-bottom: 2px solid $border-bottom;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    .btn-box {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $border-bottom;
+        .btn-blue {
+            background: $blue-color;
+            color: $white;
+            border: 0;
+            border-radius: 0;
+            padding: 10px 30px;
+        }
+    }
+
+    .li-box {
+        .blue_text {
+            color: $blue-color;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        ul {
+            list-style: disc;
+            padding-left: 15px;
+            @include breakpoints-min-max (#{map-get($grid-breakpoints, md)}, #{map-get($grid-breakpoints, xxl)}) {
+                @include crossBrowser (column-count, 2);
+                @include crossBrowser (column-gap, 20px);
+            }
+            li {
+                font-size: 13px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    ul {
+        padding-bottom: 2rem;
+        @include breakpoints-min-max (#{map-get($grid-breakpoints, lg)}, #{map-get($grid-breakpoints, xxl)}) {
+            @include crossBrowser (column-count, 4);
+            @include crossBrowser (column-gap, 10px);
+            text-align: left;
+        }
+        @include breakpoints-min-max (#{map-get($grid-breakpoints, md)}, #{map-get($grid-breakpoints, lg)}) {
+            @include crossBrowser (column-count, 3);
+            @include crossBrowser (column-gap, 10px);
+            text-align: left;
+        }
+        @include breakpoints-min-max (#{map-get($grid-breakpoints, sm)}, #{map-get($grid-breakpoints, md)}) {
+            @include crossBrowser (column-count, 2);
+            @include crossBrowser (column-gap, 10px);
+            text-align: left;
+        }
+        @include breakpoints-max (#{map-get($grid-breakpoints, sm)}) {
+            text-align: center;
+        }
+        li {
+            font-size: 16px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 2;
+        }
+    }
+
+    .social-box {
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        line-height: 2;
+        p {
+            &:last-child {
+                font-size: 14px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.navv-pills {
+    .nav-tabs {
+        .nav-item {
+            .nav-link {
+                border: 0;
+                color: $blue-color;
+                padding: 15px 30px;
+                &:hover {
+                    border: 0;
+                }
+                &.active {
+                    background: $blue-color;
+                    border-radius: 0;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    label {
+        margin: 15px auto;
+    }
+    .custom-control-label::before { 
+        top: 0.05rem;
+        background-color: #6c757d;
+    }
+    .custom-control-label::after { 
+        top: 0.05rem;
+    }
+}
+.form-slot-btn {    
+    .btn {
+        font-size: 14px;
+        border: 0;
+        .active {
+            &:active{
+                &:focus {
+                    box-shadow: none;
+                } 
+            }
+        }
+    }
+}
