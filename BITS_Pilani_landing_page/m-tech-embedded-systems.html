@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="shortcut icon" href="assets/assets/ico/fav_32.png">-->
+        <link rel="icon" href="assets/images/favicon.png">
+        <title>BITS Pilani</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Owl Carousel CSS -->
+        <link href="assets/css/owl.carousel.css" rel="stylesheet" >
+
+        <!-- Animate CSS -->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+
+        <!-- Responsive Tabs -->
+        <link href="assets/css/responsive-tabs.css" rel="stylesheet">
+
+        <!-- FontAwesome Icon CSS -->
+        <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+
+    <body>
+        <a class="btn-fixed" href="javascript:void(0);"> <i class="fa fa-envelope"></i>
+            <h5 class="text-center">Enquiry</h5>
+        </a>
+        <a class="btn-fixed-mob" href="javascript:void(0);" onclick="ScrlTop();" style="display: none;"> <i class="fa fa-envelope"></i>
+            <h5 class="text-center">Enquiry</h5>
+        </a>
+        <div class="modal fade" id="mobcontact" role="dialog">
+            <div class="modal-dialog"> 
+
+                <!-- Modal content-->
+                <div id="brochurePopup"></div>
+            </div>
+        </div>
+        <div id="header"></div>
+
+        <!-- Start BITS Masthead -->
+        <div class="bits-masthead">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+                <!-- Indicators --> 
+                <!--<ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>--> 
+                <!-- BITS BANNER for slides -->
+                <div class="carousel-inner">
+                    <div class="item active"><img src="assets/images/new/m.tech-design-engg.png" alt="" class="img-responsive full-width">
+                        <div class="carousel-caption">
+                            <div class="col-sm-4 pad0">
+                                <div class="bits-caption">
+                                    <div class="col-sm-11 col-sm-offset-1 col-md-10 col-md-offset-2">
+                                        <h3>M.Tech.  <br/>Design <br/>Engineering</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls --> 
+                <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>--> 
+            </div>
+            <div class="main-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8">
+                            <div class="bits-form">
+                                <h2>download brochure</h2>
+                                <p>Fill in your details to download programme brochure</p>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email*">
+                                    </div>
+                                    <!-- <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="Org Name*">
+                                     </div>-->
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>City</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> I authorize BITS Pilani to contact me</label>
+                                    </div>
+                                    <!--<div class="form-group">
+                                      <select class="form-control">
+                                        <option>Programmes</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                    </div>-->
+                                    <div class="clearfix"></div>
+                                    <a class="btn btn-block bits-submit-form" href="#">Submit</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start BITS Masthead --> 
+
+        <!--Work Integrated Learning Program-->
+        <section  class="leaning-program">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="programme-highlights">
+                            <div class="text-center icon"> <img src="assets/images/software-system/icon/embedded-systems.png"  alt=""/> </div>
+                            <!--<h3>Programme Highlights</h3>
+                            <p>Specialization in one of the following areas: Embedded systems, Networked systems, Data analytics, Software engineering and Telecommunications.</p>
+                            <p>Lab exercises consist of programming exercises, experiments using simulation tools, analysis and design of systems, etc. Some of the tools used in assignments are 
+                              Code::Blocks, SQLite, Star UML, NS2, WireShark and Keil</p>
+                            <h3>Eligibility:</h3>
+                            <p>B Tech./ BE/ M.Sc./ MCA or equivalent with a minimum of one year work experience in software industry.</p>
+                            <h3>Duration</h3>
+                            <p>4 Semesters</p>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>M.Tech. Design Engineering is a four semester Work Integrated Learning Programme designed for working professionals, and aims at building design-engineering skill to support the explosive technology growth. <br>Only those working professionals who are located at Chennai and Pune can apply to this programme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start salient features -->
+        <section class="feature-sec">
+            <div class="container">
+                <div class="row">        	
+                    <div class="salient-features clearfix">
+                        <div class="col-sm-12 col-xs-12">
+                            <h2>SALIENT FEATURES</h2>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="salient-features-content">
+                                        <h4>Education Delivery at Employer&apos;s Premises</h4>
+                                        <p>These programmes are delivered by experienced faculty at the partner organisation&apos;s own premises and can be pursued by the employees without taking any career break.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="salient-features-content">
+                                        <h4>Industry Relevant &amp; Rigorous Curriculum</h4>
+                                        <p>WILP programmes are designed to integrate modern academic content with evolving requirements of the workplace and are delivered with the same rigour as programmes offered on campus.</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="salient-features-content">
+                                        <h4>Customised Curriculum</h4>
+                                        <p>Designed to cater to the learning needs of specific industries, these programmes are also offered with a degree of customisation to suit the Learning & Development needs of corporate partners.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="salient-features-content">
+                                        <h4>Assignments / Dissertation drawn from the work environment</h4>
+                                        <p>Participants apply knowledge and concepts to address complex, real-world business issue.</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end salient features -->
+
+
+        <!---Programmes offered-->
+        <section class="programmed-offered">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="responsive-tabs">
+                            <!--                            <h2>PROGRAMME OBJECTIVES</h2>
+                                                        <div>
+                                                            <div class="col-sm-4 col-xs-12">
+                                                                <div class="programmed-offered-content">
+                                                                    <h2>PROGRAMME OBJECTIVES</h2>
+                                                                    <p>The programme aims to enable the learners to choose to gain expertise in some of the fastest growing domains like IoT, Instrumentation, Automotive Engineering, Aeronautics, Telecommunication, and Defence.</p>
+                                                                </div>
+                                                            </div>            
+                                                        </div>-->
+                            <h2>LEARNING OUTCOMES</h2>
+                            <div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="programmed-offered-content">
+                                        <h2>STUDENT LEARNING OUTCOMES</h2>
+                                        <p>On completion of the programme learners will be able to </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="programmed-offered-content">
+                                        <ul class="custom-counter">
+                                            <li> 
+                                                <span class="stepcounter">1</span>
+                                                <p>Design machine elements with complex geometry and composite material systems using FEM for variety of loading conditions such as static, dynamic, and fatigue loads </p>
+                                            </li>
+                                            <li>
+                                                <span class="stepcounter">2</span>
+                                                <p>etermine vibration signature for mechanical systems and suggest recommendations for improvement </p>
+                                            </li>
+                                            <li>
+                                                <span class="stepcounter">3</span>
+                                                <p>Perform nonlinear computational modelling of product functions </p>
+                                            </li>
+                                            <li>
+                                                <span class="stepcounter">4</span>
+                                                <p>Integrate mechanical systems with electrical / electronic control systems </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="programmed-offered-content">
+                                        <ul class="custom-counter">
+                                            <li>
+                                                <span class="stepcounter">5</span>
+                                                <p>Recommend methods and instruments suitable for various parametric experimental setup </p>
+                                            </li>
+                                            <li>
+                                                <span class="stepcounter">6</span>
+                                                <p>Select the most appropriate material for components based on performance, manufacturability and environmental sustainability </p>
+                                            </li>
+                                            <li>
+                                                <span class="stepcounter">7</span>
+                                                <p>Lead research and development projects</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>            
+                            </div>
+                            <h2>PROGRAMME CURRICULUM </h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p><strong>First semester </strong></p>
+                                        <ul class="yellowarrow">
+                                            <li><p>Advanced Engineering Mathematics</p></li>
+                                            <li><p>Product Design</p></li>
+                                            <li><p>Materials Technology &amp; Testing </p></li>
+                                            <li><p>Computer Aided Analysis &amp; Design</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p><strong>Second Semester</strong></p>
+                                        <ul class="yellowarrow">
+                                            <li><p>Finite Element Methods</p></li>
+                                            <li><p>Dyanamics & vibrations</p></li>
+                                            <li><p>Mechatronics</p></li>
+                                            <li><p>Project Management</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p><strong>Third Semester</strong></p>
+                                        <ul class="yellowarrow">
+                                            <li><p>Mechanisms &amp; Robotics </p></li>
+                                            <li><p>Computational Fluid Dynamics </p></li>
+                                            <li><p>Advanced Composites </p></li>
+                                            <li><p>Quality Assurance and Reliability </p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p><strong>Fourth Semester</strong></p>
+                                        <ul class="yellowarrow">
+                                            <li><p>Dissertation</p></li>
+                                        </ul>
+                                    </div>
+                                </div>           
+                            </div>
+                            <h2>LEARING METHODOLOGY</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="col-md-2">
+                                            <img src="assets/images/new/experiential-learning.png" class="img-responsive center-block">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <p><strong>EXPERIENTIAL LEARNING</strong></p>
+                                            <p>The programme emphasises on Experiential Learning that allows learners to apply concepts learnt in classroom in simulated and real work situations. This is achieved through:</p>
+                                            <p><strong>SIMULATION BASED EXERCISES</strong></p>  
+                                            <div>
+                                                <img src="assets/images/new/case-studies.png" alt="Simulation based exercises" title="Simulation based exercises " class="pull-left">
+                                                <p style='margin-left: 50px;'><strong>Case Studies and Assignments:</strong> Carefully chosen real-world cases & assignments are both discussed and used as problem-solving exercises during the programme </p>
+                                            </div>
+                                            <div>
+                                                <img src="assets/images/new/dissertion_projectWork.png" alt="Dissertation/ Project Work" title="Dissertation/ Project Work" class="pull-left">
+                                                <p style='margin-left: 50px;'><strong>Dissertation/ Project Work:</strong> The IV semester offers an opportunity for learners to apply their knowledge gained during the programme to a real-world like complex project. The learner is expected to demonstrate understanding of vital principles learnt across semesters and their ability to successfully apply these concepts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="assets/images/new/interactive-with-faculty.png" alt="INTERACT WITH BITS PILANI FACULTY" title="INTERACT WITH BITS PILANI FACULTY" class="img-responsive center-block">
+                                            </div>
+                                            <div class="col-md-10">
+                                                <p><strong>INTERACT WITH BITS PILANI FACULTY</strong></p>
+                                                <p>This programme provides a unique opportunity for learners to interact with BITS Pilani faculty in-person during weekend lectures in Chennai and Pune.</p>                                               
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="assets/images/new/contionous-assesment.png" alt="CONTINUOUS ASSESSMENT" title="CONTINUOUS ASSESSMENT" class="img-responsive center-block">
+
+                                            </div>
+                                            <div class="col-md-10">
+                                                <p><strong>CONTINUOUS ASSESSMENT </strong></p>
+                                                <p>Continuous Assessment includes graded Assignments/ Quizzes, Mid-semester exam, and Comprehensive Exam</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>ELIGIBILITY</h2>
+                            <div>
+                                <div class="cl-md-4 col-sm-4 col-xs-12">
+                                    <div class="programmed-offered-content">
+                                        <h2>ELIGIBILITY</h2>
+                                        <p>Employed professionals working in engineering design and allied fields, holding BE/ B.Tech./ M.Sc. or equivalent in relevant disciplines, with minimum one year relevant work experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h4>Last date to submit application forms is September 15, 2018</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+
+        <!-- Bootstrap core JavaScript
+            ================================================== --> 
+        <!-- Placed at the end of the document so the pages load faster --> 
+        <!-- jQuery --> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script> 
+
+        <!-- Essential --> 
+        <script src="assets/js/bootstrap.js" type="text/javascript"></script> 
+
+        <!-- Scroll to top --> 
+        <script src="assets/js/scrollToTop.js" type="text/javascript"></script>
+
+        <!-- Owl Carousel --> 
+        <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script> 
+        <!-- Responsive Tabs --> 
+        <script src="assets/js/responsiveTabs.js" type="text/javascript"></script> 
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

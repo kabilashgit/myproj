@@ -1,0 +1,134 @@
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .bits-masthead .main-text .bits-form .form-control{ font-size:12px; height:26px; padding:5px 10px;}
+    .bits-masthead .main-text .bits-submit-form{ font-size:14px; padding:4px;}
+}
+
+@media screen and (min-width:1366px){.bits-masthead .carousel-inner .item{height:400px}}
+@media (max-width: 991px) {
+    header{ padding-bottom:20px;}
+    /* Start BITS Navigation */
+    .bits-top-nav ul li{ padding:0 7px;}
+    .bits-navigation .navbar-header { float: none; border-bottom:1px solid #cecece;}
+    .bits-navigation .navbar-toggle {    display: block; margin-right:0; }
+    .bits-navigation .navbar-collapse {  border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);}
+    .bits-navigation .navbar-collapse.collapse { display: none!important;}
+    .bits-navigation .navbar-nav { float: none!important; margin: 7.5px -15px; border:1px solid #cecece;}
+    .bits-navigation .navbar-nav>li {float: none; border-left:none; border-bottom:1px solid #cecece}
+    .bits-navigation .navbar-nav>li:last-child{ border:none;}
+    .bits-navigation .navbar-nav>li>a {padding-top: 10px; padding-bottom: 10px; }
+    .bits-navigation .navbar-collapse.collapse.in {  /* NEW */ display: block!important; }
+    .bits-navigation .navbar-nav .open .dropdown-menu { background-color: transparent; border: 0 none; box-shadow: none; float: none;  margin-top: 0; position: static; width: auto;}
+    .bits-navigation .navbar-nav > li > a i{ float:right;}
+    .bits-navigation .navbar-nav{ margin:0;}
+    .bits-navigation .navbar-collapse{ padding:0;}
+    .bits-navigation .bits-navigation-content .list-unstyled{ padding:0;}
+    .bits-navigation .navbar-toggle{ margin-bottom:4px; margin-top:4px;}
+    .bits-navigation .navbar-toggle, .bits-navigation .navbar-toggle:focus{ background:#211d70; border-radius:0; border:1px solid #211d70; transition:all .1s ease-in-out;}
+    .bits-navigation .navbar-toggle:focus .icon-bar{background:#fff;}
+    .bits-navigation .navbar-toggle:hover{ background:#fff;}
+    .bits-navigation .navbar-toggle .icon-bar{ background:#fff;}
+
+    .bits-navigation .navbar-toggle:hover .icon-bar{ background:#211d70;}
+    /* Start BITS Navigation */
+
+    /* Start BITS Masthead */
+    .bits-masthead .carousel-caption .bits-caption h3{ font-size:18px;}
+
+    /* End BITS Masthead */
+    /* Ramesh */
+    .btn-fixed{ display:none !important;}
+    .btn-fixed-mob{ display:block;}	
+    /* Start BITS Masthead */
+    /*.bits-masthead .main-text{ display:none !important;}*/
+}
+
+@media (max-width: 767px) {
+    .main-text {
+
+    }
+    /* Start topNav */
+    .bits-top-nav ul{ width:344px; margin:0 auto; float:none;}
+    /* Start topNav */
+
+    /* Start Logo */
+    .bits-pilani-logo img{ margin:0 auto; width:170px;}
+    /* End Logo */
+
+    /*Start Searchbar */
+    .searchbar{ width:100%; max-width:none; float:none; margin-top:10px;}
+    /*Start Searchbar */
+
+    /*Start page Last update */
+    .bits-page-update{ width:100%; display:inline-block; text-align:center; margin-top:10px; padding-right:0;}
+    /*Start page Last update */
+
+    /* Start BITS Navigation */
+    .bits-navigation .navbar-header{ padding:0 15px;}
+
+    /* Start BITS Masthead */
+    /*.bits-masthead .main-text{ display:none !important;}*/
+    .bits-masthead .carousel-inner .item{ height:auto;}
+    .bits-masthead .main-text{position:relative;
+                              -webkit-animation: none;
+                              -moz-animation: none;
+                              -ms-animation: none;
+                              animation: none;}
+    .bits-masthead .carousel-caption{ bottom:auto; top:auto; position:relative; padding:0; width:100%;}
+    .bits-masthead .main-text .bits-form{ padding:10px 0;}
+
+    /* End BITS Masthead */	
+
+    /* start footer section */
+    footer .companybrand img{ float:none;}
+
+    /* end footer section */
+
+
+    /* Start Vipan Kumar CSS */
+    section{padding:25px 0}
+    .row-height{margin-top:0px !important}
+    .video-item{margin-bottom:20px;}
+    .feature-image{margin-bottom:20px;}
+
+    .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next  {
+        display:none
+    }
+    .more-about .form-bg{ padding:25px 0;}
+    .bits-pilani-logo{ text-align:center;}
+    .bits-page-update .last-update{ margin:0;}
+    .bits-page-update .last-update span{ display:inline;}
+    /* End Vipan Kumar CSS */
+    /* Mukesh */
+    .programmes-offered .responsive-tabs__heading {background-color:#fff !important; color:#211D70 !important; font-size:14px !important;}
+    .programmes-offered .responsive-tabs__heading::after { border-top:10px solid #ED1C24;}
+
+
+    h2{ font-size: 18px !important;}
+    .programmes-offered .responsive-tabs__heading::after{ border-bottom:none !important;}
+    .salient-features{ padding:15px 0 !important;}
+
+    .wilpvideoiframe{ width:100%; height:250px;}
+
+}
+
+
+@media (max-width: 479px) {
+    /* Start Vipan Kumar CSS */
+    .order-mob-box .slider.slider-horizontal{ width:80%; margin-left:0px;}
+    /* End Vipan Kumar CSS */
+    .bits-pilani-logo a{ width:100%;}
+
+    .responsive-tabs__heading{ font-size:16px !important;}	
+}
+
+@media (max-width: 375px) {
+
+
+    /* Start topNav */
+    .bits-top-nav ul{ width:284px;}
+    .bits-top-nav ul li{ padding:0 3px;}
+    .bits-top-nav ul li a{ font-size:12px;}
+    .bits-page-update .last-update{ font-size:12px;}
+    /* Start topNav */
+
+}
