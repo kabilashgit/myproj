@@ -1,0 +1,363 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 8, 2018, 6:44:57 AM
+    Author     : Abilash
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*custom bootstrap reset*/
+.btn:active {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+.btn:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.btn:hover {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Aug, 2018, 1:05:12 PM
+    Author     : Manikandan K
+*/
+body {
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+.top-login {
+  text-align: right;
+  border-bottom: 1px solid #eeeeee;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.top-login a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*top menu styles*/
+.top-menu-wrapper {
+  border-bottom: 2px solid #eeeeee;
+}
+.top-menu-wrapper .navbar-light {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.top-menu-wrapper .navbar-light .navbar-nav .nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.top-menu-wrapper .navbar-light .navbar-nav .nav-link {
+  color: #000000;
+}
+
+/*sub header styles*/
+.bg-grey {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #f5f5f5;
+  border-bottom: 2px solid #0066ad;
+}
+
+.sub-header .nav-pills {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #eeeeee;
+}
+.sub-header .nav-pills .nav-link {
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  .sub-header .nav-pills .nav-link {
+    border: 1px solid #eeeeee;
+    background: #eeeeee;
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+}
+
+.content-wrap {
+  padding-top: 3rem;
+}
+.content-wrap .about-box .heading {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+.content-wrap .about-box .desc {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  padding-bottom: 1.5rem;
+}
+.content-wrap .step-box {
+  border-bottom: 2px solid #eeeeee;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.content-wrap .step-box .heading {
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+.content-wrap .step-box .blue_heading {
+  color: #0066ad;
+  line-height: 1.8;
+  padding-bottom: 1rem;
+}
+.content-wrap .step-box .desc {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 992px) and (max-width: 2500px) {
+  .content-wrap .step-box .box {
+    border-right: 2px solid #eeeeee;
+  }
+}
+@media (max-width: 992px) {
+  .content-wrap .step-box .box {
+    border-bottom: 2px solid #eeeeee;
+  }
+}
+.content-wrap .step-box .box:last-child {
+  border: none;
+}
+.content-wrap .btn-box {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eeeeee;
+}
+.content-wrap .btn-box .btn-blue {
+  background: #0066ad;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 30px;
+}
+.content-wrap .li-box .blue_text {
+  color: #0066ad;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.content-wrap .li-box ul {
+  list-style: disc;
+  padding-left: 15px;
+}
+@media (min-width: 768px) and (max-width: 2500px) {
+  .content-wrap .li-box ul {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-gap: 20px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    -ms-column-gap: 20px;
+    -o-column-gap: 20px;
+  }
+}
+.content-wrap .li-box ul li {
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+footer ul {
+  padding-bottom: 2rem;
+}
+@media (min-width: 992px) and (max-width: 2500px) {
+  footer ul {
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -ms-column-count: 4;
+    -o-column-count: 4;
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    -ms-column-gap: 10px;
+    -o-column-gap: 10px;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer ul {
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -o-column-count: 3;
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    -ms-column-gap: 10px;
+    -o-column-gap: 10px;
+    text-align: left;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  footer ul {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    -ms-column-gap: 10px;
+    -o-column-gap: 10px;
+    text-align: left;
+  }
+}
+@media (max-width: 576px) {
+  footer ul {
+    text-align: center;
+  }
+}
+footer ul li {
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+footer .social-box {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 2;
+}
+footer .social-box p:last-child {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.navv-pills .nav-tabs .nav-item .nav-link {
+  border: 0;
+  color: #0066ad;
+  padding: 15px 30px;
+}
+.navv-pills .nav-tabs .nav-item .nav-link:hover {
+  border: 0;
+}
+.navv-pills .nav-tabs .nav-item .nav-link.active {
+  background: #0066ad;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-group label {
+  margin: 15px auto;
+}
+.form-group .custom-control-label::before {
+  top: 0.05rem;
+  background-color: #6c757d;
+}
+.form-group .custom-control-label::after {
+  top: 0.05rem;
+}
+
+.form-slot-btn .btn {
+  font-size: 14px;
+  border: 0;
+}
+.form-slot-btn .btn .active:active:focus {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
